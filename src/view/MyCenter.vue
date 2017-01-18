@@ -46,7 +46,7 @@
                 <div class="weui-cell__ft">v1.0.0</div>
             </a>
         </div>
-        <myfoot :isSelect="path"></myfoot>
+        <myfoot></myfoot>
     </div>
 </template>
 <script>
@@ -57,8 +57,7 @@
         },
         data() {
             return {
-                msg: 'hello vue',
-                path: 'my',
+
             }
         },
         methods: {

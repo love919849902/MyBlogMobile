@@ -26,7 +26,7 @@
     import myhead from './../components/Header'
     import myfoot from './../components/Footer'
     import common from '../base/common'
-    import 'whatwg-fetch'
+    import fetchs from './../base/fetch'
 
     export default {
         components: {
@@ -39,18 +39,13 @@
             }
         },
         created() {
-            this.init();
+            fetchs.get('/static/data/Digital.json')
+                .then((result) => {
+                    this.list = result;
+                })
         },
         methods: {
-            init() {
-                fetch('static/data/Digital.json')
-                    .then((response) => { return response.json() })
-                    .then((json) => {
-                        this.list = json;
-                    }).catch(function (ex) {
-                        console.log('parsing failed', ex)
-                    })
-            },
+
         },
         filters: {
             DealDate(date) {

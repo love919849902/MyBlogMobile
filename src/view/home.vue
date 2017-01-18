@@ -19,14 +19,14 @@
                 </div>
             </div>
         </div>
-        <myfoot :isSelect="path"></myfoot>
+        <myfoot></myfoot>
     </div>
 </template>
 <script>
     import myhead from './../components/Header'
     import myfoot from './../components/Footer'
-    import common from '../base/common'
-    import 'whatwg-fetch'
+    import common from './../base/common'
+    import fetchs from './../base/fetch'
 
     export default {
         components: {
@@ -36,21 +36,17 @@
         data() {
             return {
                 list: [],
-                path: 'home',
             }
         },
         created() {
-            this.init();
+            fetchs.get('/static/data/Recommend.json')
+                .then((result) => {
+                    this.list = result;
+                })
         },
         methods: {
             init() {
-                fetch('static/data/Recommend.json')
-                    .then((response) => { return response.json() })
-                    .then((json) => {
-                        this.list = json;
-                    }).catch(function (ex) {
-                        console.log('parsing failed', ex)
-                    })
+
             },
         },
         filters: {
