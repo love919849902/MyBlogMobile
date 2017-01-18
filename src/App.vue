@@ -1,23 +1,22 @@
 <template>
-    <router-view></router-view>
-    <!--<transition name="slide-fade" mode="out-in">
+    <transition name="slide-fade" mode="out-in">
         <router-view></router-view>
-    </transition>-->
+    </transition>
 </template>
 
 <script>
     export default {
-        data(){
+        data() {
             return {
                 path: ''
             }
         },
         components: {
-           
+
         },
-        methods:{
+        methods: {
             componentsChange(flag) {
-                this.$router.push({path: flag});
+                this.$router.push({ path: flag });
             }
         }
     }

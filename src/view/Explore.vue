@@ -36,7 +36,7 @@
         data() {
             return {
                 list: [],
-                path: 'home',
+                path: 'blog',
             }
         },
         created() {
@@ -44,7 +44,7 @@
         },
         methods: {
             init() {
-                fetch('static/data/Recommend.json')
+                fetch('static/data/Explore.json')
                     .then((response) => { return response.json() })
                     .then((json) => {
                         this.list = json;

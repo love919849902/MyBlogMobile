@@ -19,7 +19,7 @@
                 </div>
             </div>
         </div>
-        <myfoot :isSelect="path"></myfoot>
+        <myfoot></myfoot>
     </div>
 </template>
 <script>
@@ -36,7 +36,6 @@
         data() {
             return {
                 list: [],
-                path: 'home',
             }
         },
         created() {
@@ -44,7 +43,7 @@
         },
         methods: {
             init() {
-                fetch('static/data/Recommend.json')
+                fetch('static/data/Digital.json')
                     .then((response) => { return response.json() })
                     .then((json) => {
                         this.list = json;

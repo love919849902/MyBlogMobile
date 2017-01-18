@@ -5,29 +5,35 @@ module.exports = {
     mode: "hash",
     routes: [
         {
+            name: 'home',
             path: '/',
-            component: resolve => require(['./view/blog.vue'], resolve)
+            component: resolve => require(['./view/Home.vue'], resolve)
         },
         {
+            name: 'home',
             path: '/home',
-            component: resolve => require(['./view/home.vue'], resolve)
+            component: resolve => require(['./view/Home.vue'], resolve)
         },
         {
-            path: '/blog',
-            component: resolve => require(['./view/blog.vue'], resolve)
+            name: 'explore',
+            path: '/explore',
+            component: resolve => require(['./view/Explore.vue'], resolve)
         },
         {
-            path: '/it',
-            component: resolve => require(['./view/it.vue'], resolve)
+            name: 'digital',
+            path: '/digital',
+            component: resolve => require(['./view/Digital.vue'], resolve)
         },
         {
+            name: 'login',
             path: '/login',
-            component: resolve => require(['./view/login.vue'], resolve)
+            component: resolve => require(['./view/Login.vue'], resolve)
         }
         ,
         {
-            path: '/my',
-            component: resolve => require(['./view/my.vue'], resolve)
+            name: 'center',
+            path: '/center',
+            component: resolve => require(['./view/MyCenter.vue'], resolve)
         }
     ]
 }

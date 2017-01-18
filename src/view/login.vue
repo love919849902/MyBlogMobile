@@ -1,7 +1,7 @@
 <template>
     <div id="mainPage">
         <header class="header">
-            <a v-on:click="back()"><img src="static/images/back.png" /></a>
+            <a v-on:click="back()"><img src="./../assets/images/back.png" /></a>
         </header>
         <div id="main" class="page__bd">
             <div class="login">
@@ -31,15 +31,13 @@
 
 </style>
 <script>
-    import myfoot from './../components/footer.vue'
     export default {
         components: {
-            myfoot,
+            
         },
         data() {
             return {
-                msg: 'hello vue',
-                path: 'search',
+
             }
         },
         methods: {
