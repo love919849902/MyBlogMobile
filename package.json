@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "autoprefixer-loader": "^3.2.0",
-    "style-loader": "^0.13.1",
     "vue": "^2.0.1",
     "vue-router": "^2.0.1",
     "whatwg-fetch": "^2.0.1"
@@ -41,6 +40,7 @@
     "nightwatch": "^0.9.8",
     "selenium-server": "2.53.1",
     "semver": "^5.3.0",
+    "style-loader": "^0.13.1",
     "opn": "^4.0.2",
     "ora": "^0.3.0",
     "shelljs": "^0.7.4",

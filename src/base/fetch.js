@@ -1,4 +1,4 @@
-import 'whatwg-fetch'
+// import 'whatwg-fetch'
 var promise = {
     baseApi: '',
     get: function (url, data) {

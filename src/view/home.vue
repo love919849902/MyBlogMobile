@@ -26,7 +26,7 @@
     import myhead from './../components/Header'
     import myfoot from './../components/Footer'
     import common from './../base/common'
-    import fetchs from './../base/fetch'
+    import fetch from './../base/fetch'
 
     export default {
         components: {
@@ -39,7 +39,7 @@
             }
         },
         created() {
-            fetchs.get('/static/data/Recommend.json')
+            fetch.get('/static/data/Recommend.json')
                 .then((result) => {
                     this.list = result;
                 })
