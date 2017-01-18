@@ -5,7 +5,6 @@ module.exports = {
     mode: "hash",
     routes: [
         {
-            name: 'home',
             path: '/',
             component: resolve => require(['./view/Home.vue'], resolve)
         },

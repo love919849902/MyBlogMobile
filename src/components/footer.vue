@@ -32,7 +32,8 @@
       }
     },
     created() {
-      this.isSelect = this.$route.name;
+      if (this.$route.name)
+        this.isSelect = this.$route.name;
     },
     methods: {
       barSelect(flag) {

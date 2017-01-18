@@ -1,6 +1,6 @@
-# y
+# MyBlogMobile
 
-> y
+> MyBlogMobile
 
 ## Build Setup
 
