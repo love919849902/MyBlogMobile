@@ -10,7 +10,7 @@
                         </div>
                         <div class="weui-media-box__bd">
                             <div class="weui-media-box__title news_title">
-                                {{item.title}}
+                                {{item.title}}12312312
                             </div>
                             <p class="weui-media-box__desc left">{{item.columnid|columndeal}}</p>
                             <p class="weui-media-box__desc right">{{item.ctime|DealDate}}</p>
